@@ -14,9 +14,7 @@ body{
     overflow: hidden;
     padding: var(--padding-container);
 }
-.nav{
-    --padding-container:0;
-}
+
 .hero{
     width: 100%;
     height: 100vh;
@@ -25,6 +23,7 @@ body{
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
+    color: #fff;
 }
 .hero::before{
     content: "";
@@ -33,6 +32,107 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%, url("./assets/main.jpg"));
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('./assets/main.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
 
+}
+.nav{
+    --padding-container:0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+}
+.nav_titulo{
+    font-weight: 300;
+}
+.nav_link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap:2em;
+}
+.nav_items{
+    list-style: none;
+}
+.nav_links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+.nav_img{
+    display: block;
+    width: 30px;
+
+}
+.nav_cerrar{
+    display: var(--show, none);
+}
+.hero_container{
+    max-width: 800px;
+    display: grid;
+    --padding-container:0;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+
+}
+.hero_tittle{
+    font-size: 3rem;
+}
+.hero_parrafo{
+    margin-bottom: 20px;
+}
+.cta{
+    display: inline-block;
+    background-color: #2091f9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 32px;
+
+}
+.acerca{
+    text-align: center;
+   
+}
+.subtittle{
+    color: var(--color-tittle);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.acerca_parrafo{
+    line-height: 1.7;
+}
+.acerca_iconos{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.acerca_main{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+}
+.acerca_icono{
+    width: 50px;
 }
