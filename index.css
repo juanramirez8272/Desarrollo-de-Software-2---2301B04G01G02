@@ -108,9 +108,14 @@ body{
     text-align: center;
    
 }
-.subtittle{
+.subtitle{
     color: var(--color-tittle);
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+.subtitle1{
+    color: var(--color-tittle);
+    font-size: 1.5rem;
     margin-bottom: 25px;
 }
 .acerca_parrafo{
@@ -143,4 +148,73 @@ background-image:  radial-gradient(#b41ed6 0.5px, transparent 0.5px), radial-gra
 background-size: 20px 20px;
 background-position: 0 0,10px 10px;
 overflow: hidden;
+}
+.productos_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+.productos_imagen{
+    max-width: 500px;
+}
+.productos_img{
+    width: 100%;
+    display: block;
+}
+.productos_parrafo{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+.contactenos{
+    text-align: center;
+
+}
+.contactenos_tabla{
+  padding-top: 60px;  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contactenos_elemento{
+    background-color: #E5E5F7;
+    text-align: center;
+    border-radius: 10px;
+    width: 280px;
+    padding: 40px;
+    --color-plan: #4b4b4b;
+    --color-desc: #4b4b4b;
+    --bg-cta: #fff;
+    --color-cta: #2091f9;;
+    --color-items: #4b4b4b;
+}   
+.contactenos_name{
+    color: var(--color-plan);   
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.contactenos_desc{
+    font-size: 2rem;
+    color: var(--color-desc);
+}
+.contactenos_opciones{
+    margin-top: 35px;
+    display: grid;
+    gap: 1em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: var(--color-items);
+}
+.contacto_cta{
+    background-color: var(--color-cta);
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    border-radius: 32px;
+    color: var(--color-plan);  
 }
