@@ -14,12 +14,16 @@
 
     const changePosition = (add)=>{
         const currentNoticia = document.querySelector('.noticias_body--show').dataset.id;
-        value=currentNoticia;
+        value= Number(currentNoticia);
         value+= add;
 
+
+        sliders[Number(currentNoticia)-1].classList.remove('noticias_body--show');
+    
         if(value === sliders.length+1 || value ===0 ){
             value = value === 0 ? sliders.length : 1;
-        }
-        console.log(value);
+        };
+        sliders[value-1].classList.add('noticias_body--show');
     };
+    
 })();
