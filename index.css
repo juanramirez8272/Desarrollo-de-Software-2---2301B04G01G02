@@ -325,3 +325,52 @@ overflow: hidden;
 .footer_author{
     font-weight: 300;
 }
+html {
+    scroll-behavior: smooth;
+  }
+  #share-container span {
+    display: block;
+    margin: 3rem auto;
+    font-size: 50px;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  #share-buttons i {
+    font-size: 100px;
+    margin: 20px;
+  }
+  .facebook {
+        color: #3b5998;  
+        margin-bottom: 15px;
+        font-weight: 300;
+        text-decoration: none;
+  }
+  .twitter {
+      color: #55acee;
+      margin-bottom: 15px;
+        font-weight: 300;
+        text-decoration: none;
+  }
+  .linkedin {
+      color: #0077b5;
+      margin-bottom: 15px;
+        font-weight: 300;
+        text-decoration: none;
+  }
+  .whatsapp {
+      color: #25D366;
+      margin-bottom: 15px;
+        font-weight: 300;
+        text-decoration: none;
+  }
+  .botones_compartir{
+    padding-top: 60px;  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .social{
+    height: 150px;
+  }
